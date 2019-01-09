@@ -16,10 +16,10 @@ After you have a webserver setup:
 
 Alternatively you can do the install.sh stuff manually by:
 
-3a. Copy **config.sample.php** to **config.php** `cp config.sample.php config.php`
-3b. Make the parsedown directory `mkdir -p lib/parsedown`
-3c. Go get the [latest Parsedown](https://github.com/erusev/parsedown/releases/latest)
-3d. Untar it into lib/parsedown `tar --strip-components=1 -xzf parsedown-1.7.1.tar.gz -C lib/parsedown/`
+* Copy **config.sample.php** to **config.php** `cp config.sample.php config.php`
+* Make the parsedown directory `mkdir -p lib/parsedown`
+* Go get the [latest Parsedown](https://github.com/erusev/parsedown/releases/latest)
+* Untar it into lib/parsedown `tar --strip-components=1 -xzf parsedown-1.7.1.tar.gz -C lib/parsedown/`
 
 ### Markdown Notes
 
