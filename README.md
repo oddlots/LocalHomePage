@@ -4,19 +4,26 @@ Simple page that automatically lists, and provide links to, my local sites and t
 
 ### Install
 
-Follow cmalls setup [tutorial](https://mallinson.ca/osx-web-development) if you need to get a local server going on your mac.
+Follow cmalls setup [tutorial](https://mallinson.ca/posts/5/the-perfect-web-development-environment-for-your-new-mac) if you need to get a local server going on your mac.
 
 After you have a webserver setup:
 
 1. Drop this project in the web root
-2. Copy **config.sample.php** to **config.php**
-3. Make whatever config changes are required in the **config.php** file.
-4. Open it up in your browser and rock & roll.
+2. Open terminal and cd into the LocalHomePage directory (whatever you named it)
+3. Run the install.sh file by typing `./install.sh`
+4. Make whatever config changes are required in the **config.php** file.
+5. Open it up in your browser and rock & roll.
 
+Alternatively you can do the install.sh stuff manually by:
+
+3a. Copy **config.sample.php** to **config.php** `cp config.sample.php config.php`
+3b. Make the parsedown directory `mkdir -p lib/parsedown`
+3c. Go get the [latest Parsedown](https://github.com/erusev/parsedown/releases/latest)
+3d. Untar it into lib/parsedown `tar --strip-components=1 -xzf parsedown-1.7.1.tar.gz -C lib/parsedown/`
 
 ### Markdown Notes
 
-I added a markdown parser to handle the additions noted (groan) below. I got lazy with Parsedown and just copied it into the lib folder. I intent to fix that eventually but this works for now. If you want to go get the [latest version](https://github.com/erusev/parsedown/releases/latest), simply replace the contents of **/lib/parsedown** with what comes in the zip.
+I added a markdown parser to handle the additions noted (groan) below.
 
 ```php
 /** notes config */
